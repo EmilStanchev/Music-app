@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/profile.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section id="hero">
+        <nav>
+            <div class="NavBar">
+                <a href="/success/logged"> Home </a>
+                <a href="/success/songs"> Songs </a>
+                <a href="./contact">Contact</a>
+                <a href="../login">Logout</a>
+
+            </div>
+        </nav>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card user-card">
+                    <div class="card-header">
+                        <h5>Profile</h5>
+                    </div>
+                    <div class="card-block">
+                        <div class="user-image">
+                            <img src="/savedImages/{{Image}}" class="img-radius" alt="User-Profile-Image">
+                        </div>
+                        <h6 class="f-w-600 m-t-25 m-b-10">{{Name}}</h6>
+                        <p class="text-muted"><a href="editProfile">Edit profile</a></p>
+                        <hr>
+                        <p class="text-muted m-t-15">Activity Level: 87%</p>
+                        <ul class="list-unstyled activity-leval">
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li></li>
+                        </ul>
+                        <div class="bg-c-blue counter-block m-t-10 p-20">
+                            <div class="row">
+                                <div class="col-4">
+                                    <p>Favorite songs:</p>
+                                    <form action="/success/profile/favorites" method="post">
+                                    <button  type='submit'><i class="fa fa-star"></i></button>
+                                    </form>
+                                </div>
+                                <div class="col-4">
+                                    <p>Favorite genre: {{Genre}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="m-t-15 text-muted">{{About}}</p>
+                        <hr>
+                        <div class="row justify-content-center user-social-link">
+                            <div class="col-auto"><a href="#!"><i class="fa fa-facebook text-facebook"></i></a></div>
+                            <div class="col-auto"><a href="#!"><i class="fa fa-twitter text-twitter"></i></a></div>
+                            <div class="col-auto"><a href="#!"><i class="fa fa-dribbble text-dribbble"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</body>
+
+</html>

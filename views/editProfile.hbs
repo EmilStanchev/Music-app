@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/editProfile.css">
+    <title>Editing</title>
+</head>
+
+<body>
+     <section id="hero">
+        <nav>
+            <div class="NavBar">
+                <a href="/success/logged"> Home </a>
+                <a href="./songs"> Songs </a>
+                <a href="./contact">Contact</a>
+                <a href="../login">Logout</a>
+
+            </div>
+        </nav>
+    </section>
+    <form action="/upload/imageSaved" , method="post" enctype="multipart/form-data">
+        <div class="imageUpload">
+            <label for="files">Choose avatar</label> <br>
+            <input class="custom" type="file" name="image" id="files" title=""><br>
+            <input type="submit" ><br>
+        </div>
+    </form>
+    <form action="/success/editProfile/saved" method="post" enctype=" multipart/form-data">
+        <div class="edit">
+            <label>Fun facts about you:</label> <br>
+            <input name="about" placeholder="About you" value="{{About}}"> <br>
+            <label>Name:</label> <br>
+            <input type="text" name="name" placeholder="username" value="{{Name}}"> <br>
+            <label>Your favorite genre:</label> <br>
+            <input type="text" name="genre" placeholder="Favorite genre" value="{{Genre}}"> <br>
+            <label>Email:</label> <br>
+            <input type="text" name="email" placeholder="email" value="{{Email}}"> <br>
+            <input type="submit" name="submit" value="Save edits">
+        </div>
+    </form>
+</body>
+
+</html>

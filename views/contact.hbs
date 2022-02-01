@@ -1,0 +1,55 @@
+<!Doctype html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="shortcut icon" type="image/x-icon" href="logo.jpg">
+            <link rel="stylesheet" href="/style.css">
+            <script src="custom.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+            <title>Contacts</title>
+        </head>
+    <body style="background-color: black;" >
+           <section id="hero">
+        <nav>
+            <div class="NavBar">
+                <a href="/success/logged"> Home </a>
+                <a href="./songs"> Songs </a>
+                <a href="./contact">Contact</a>
+                <ul>
+               <li><a href="./profile">Profile</a>
+               <ul>
+                   <li><a href="../login">Logout</a></li>
+                   </ul>
+                   </li>
+               </ul>
+            </div>
+        </nav>
+    </section>
+    <div class="contactForm">
+        <form action="/success/contact/sended" method="post" class="form">
+            <h2>CONTACT US</h2>
+            <p><input type="text" name="name" placeholder="Write your name here.."></input></p>
+            <p><input type="text" name="email" placeholder="Enter you Email"></input></p>
+            <textarea name="message" class="message">What would you like to tell us ...</textarea>  
+            <button type="submit">Send Message</button> 
+            <div>
+                <div style="margin-top: 6%;" class="wrapper">
+                   <div class="button">
+                       <div id="formIcon" class="icon">
+                      <a  href="#" > <i class="fab fa-facebook-f"></i> </a>
+                       </div>
+                   </div>
+                  <div class="button">
+                     <div id="formIcon2" class="icon2"> 
+                      <a href="#"><i class="fab fa-twitter"></i> </a> 
+                     </div>
+                  </div>
+                 <div class="button">
+                      <div id="formIcon3"class="icon3">
+                          <a  href="#"><i class="fab fa-instagram"></i> </a>
+                     </div>
+                 </div>
+          </form>
+         </div> 
+    </body>

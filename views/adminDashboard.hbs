@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/adminDashboard.css">
+
+  <title>Admin dashboard</title>
+</head>
+<body>
+  <h5 style="margin-left: 25%; font-size:150%">This is admin dashboard. Here you can add songs and take a information
+    about users, songs, and admins.</h5>
+  <div class="dashboard">
+    <h2>Number of songs: {{Songs}}</h2>
+    <h2>Number of admins: {{Admins}}</h2>
+    <h2>Number of users: {{Users}}</h2>
+
+  </div>
+  <div class="nav-side-menu">
+    <div class="brand"><img width="20%" style="margin-top: 2%;" src="/savedImages/{{Image}}" alt="photo"> <br>{{Email}}
+    </div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+    <div class="menu-list">
+      <li data-toggle="collapse" data-target="#products" class="collapsed active">
+        <a href="#"><i class="fa fa-dashboard fa-lg"></i> Dashboard
+      </li>
+      <ul class="sub-menu collapse" id="products">
+        <li><a href="adminAddSongs"><i class="fa fa-music"></i> Add songs</a></li>
+        <li><a href="allUsers"><i class="fa fa-users"></i>See user information</a></li>
+        <li><a href="allAdmins"><i class="fa fa-user-md"></i>See admin information</a></li>
+        <li><a href="../admin"><i class="fa fa-sign-out"></i>Logout</a></li>
+      </ul>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

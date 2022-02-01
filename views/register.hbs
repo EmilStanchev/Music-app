@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/register-login.css">
+
+    <title>Document</title>
+</head>
+
+<body style="background-color: black;">
+    <section id="hero">
+        <nav>
+            <div class="NavBar">
+                <a href="/"> Home </a>
+                <a href="./songs"> Songs </a>
+                <a href="./login"> Login </a>
+                <a href="./register">Register</a>
+            </div>
+        </nav>
+    </section>
+
+    <form action="/auth/register" method="POST">
+        <div id="login-box">
+            <div class="left">
+                <h1>Sign up</h1>
+
+                <input type="text" name="name" placeholder="Username" />
+                <input type="text" name="email" placeholder="E-mail" />
+                <input type="password" name="password" placeholder="Password" />
+                <input type="password" name="passwordConfirm" placeholder="Confirm password" />
+                <div class="registerpopup">
+                    <input id="register" type="submit" value="Sign me up" /></a>
+                </div>
+
+            </div>
+
+            <div class="right">
+                <span class="loginwith">Sign in with<br />social network</span>
+
+                <a class="social-signin facebook" style="font-size: 150%;" href="https://bg-bg.facebook.com/reg"> Log in
+                    with
+                    facebook</a>
+                <a class="social-signin twitter" href="https://twitter.com/i/flow/login">Log in with Twitter</a>
+                <a class="social-signin google"
+                    href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin">Log
+                    in
+                    with Google</a>
+            </div>
+            <div class="or">OR</div>
+        </div>
+        <div class="alreadyLogin">
+            <a id="h1" href="./login">Already have register?</a>
+        </div>
+    </form>
+    {{#if message}}
+    <h2 style="color: white;">{{message}}</h2>
+    {{/if}}
+</body>
+
+</html>

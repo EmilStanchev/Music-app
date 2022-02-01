@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/adminAddSongs.css">
+
+    <title>Adding song</title>
+</head>
+
+<body>
+    <h1>Here you can add information about songs in database</h1>
+     {{#if message}}
+  <h2>{{message}}</h2>
+  {{/if}}
+    <form action="/logged/added" method="post">
+        <div class="adminDashboard">
+            <label>Song title:</label> <br>
+            <input type="text" name="title" placeholder="Song`s name"> <br>
+            <Label>Author:</Label> <br>
+            <input type="text" name="author" placeholder="Song`s author"> <br>
+            <label>Lyrics: </label> <br>
+            <textarea name="lyrics" cols="0" rows="0" placeholder="Song`s lyrics"></textarea> <br>
+            <input type="submit" name="adminSubmit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>

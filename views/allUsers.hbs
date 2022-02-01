@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    {{#if message}}
+    <h2>{{message}}</h2>
+    {{/if}}
+    <div class="adminLogin">
+            <h1>Here you get information about a user</h1>
+
+        <form action="/allUsers/users" method="post">
+            <div class="adminDashboard">
+                <h2>User`s name</h2> 
+                    <input type="text" name="name" placeholder="User`s name"> 
+                <input type="submit" name="adminSubmit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

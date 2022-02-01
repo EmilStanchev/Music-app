@@ -1,0 +1,105 @@
+body{
+    background-color: #4B0082 ;
+}
+.edit{
+    display:block;
+    margin-left: 39%;
+    width: 24%;
+    background-image: url(Images/registerform.jpg);
+    background-size: 100%;
+    text-align: center;
+}
+.edit input{
+    margin-top: 7%;
+    margin-bottom: 5%;
+    font-size: 150%;
+    background:none;
+    border: darkcyan 2px solid;
+    color: darkcyan;
+    text-align: center;
+}
+
+.edit input[type="submit"]{
+    color: black;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    font-size: 150%;
+    background:#16a085;
+    font-family: 'Roboto', sans-serif;
+
+}
+.edit form{
+    width: 20%;
+}
+.edit input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: turquoise;
+    transform: translateY(-5px);
+}
+.edit label{
+    font-family: 'Roboto', sans-serif;
+    color: darkcyan;
+    font-size: 150%;
+    background: none;
+    padding-bottom: 40%;
+}
+.imageUpload{
+    width: 20%;
+    display: block;
+    margin-top: 5%;
+    margin-left: 45%;
+}
+.imageUpload form{
+    width: 10%;
+}
+.imageUpload input{
+    font-size: 140%;
+    background: none;
+    display: none;
+}
+.imageUpload input[type="submit"]{
+    font-size: 140%;
+    background: turquoise;
+    cursor: pointer;
+    display: block;
+}
+.imageUpload label{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    width: 280px;
+    background-color: black;
+    border: 2px solid white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.imageUpload label:hover{
+    background-color: turquoise;
+    transform: translateY(-10px);
+}
+
+.imageUpload input[type="submit"]:hover{
+    background-color: cyan;
+    transform: translateY(-10px);
+}
+.NavBar{
+    display: inline;
+    text-align:center;
+    list-style:none;
+    float: center;
+    }
+  
+  div a{
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    width: 280px;
+    background-color: black;
+    border: 2px solid white;
+    text-decoration: underline;
+  }
+  
+  .NavBar a:hover {
+    background-color: darkturquoise;
+  }

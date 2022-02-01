@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script type="text/javascript" src="../controllers/songsController.js"></script>
+    <script type="text/javascript" src="/custom.js"></script>
+    <title>Songs</title>
+</head>
+
+<body>
+    <section id="hero">
+        <nav>
+            <div class="NavBar">
+                <a href="/success/logged"> Home </a>
+                <a href=""> Songs </a>
+                <a href="/success/contact">Contact</a>
+
+                <ul>
+                    <li><a href="/success/profile">Profile</a>
+                        <ul>
+                            <li><a href="../login">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <form action="songs/search/" method="post">
+        <div class="search">
+            {{#if message}}
+            <h2>{{message}}</h2>
+            {{/if}}
+            <label>Search: </label>
+            <input type="text" name="title" placeholder="Search your favorite song">
+            <input type="text" name="lyrics" style="visibility: hidden; width:0%">
+
+            <input type="submit" value="Search">
+        </div>
+    </form>
+    <h1 class="titleMovies" id="h2">Here you can see all songs in this web site!</h1>
+    <div class="hideAndShow">
+        <button type="submit" id="showSong" onclick="showSongs();">Show all songs</button>
+        <button type="button" class="hideSong" id="hideSongs" onclick="hideSongs()">Hide songs</button>
+        <div>
+        </div>
+    </div>    
+    <div id="songs" class="hideSong"  >
+      <b>Songs:  </b><i style="color: black;">{{info}}</i>
+    </div>  
+</body>
+</html>
